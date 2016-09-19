@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class RssfeedActivity extends AppCompatActivity implements MyListFragment.OnItemSelectedListener{
 
@@ -36,7 +37,12 @@ public class RssfeedActivity extends AppCompatActivity implements MyListFragment
         DetailFragment fragment = (DetailFragment) getFragmentManager()
                 .findFragmentById(R.id.detailFragment);
         fragment.setText(link);
-        Snackbar.make(fragment.getView(), "Updating...", Snackbar.LENGTH_LONG).show();
+        Snackbar.make(fragment.getView(), "Updating...", Snackbar.LENGTH_LONG).setAction("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RssfeedActivity.this, "OK", Toast.LENGTH_SHORT).show();
+            }
+        }).show();
     }
 
 
