@@ -1,6 +1,7 @@
 package example.com.fragmentapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,7 +26,12 @@ public class RssfeedActivity extends AppCompatActivity implements MyListFragment
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                        .setAction("Memento", new View.OnClickListener(){
+                            @Override
+                            public void onClick(View v) {
+                                startActivity(new Intent(RssfeedActivity.this,HeadlessFragmentDemoActivity.class));
+                            }
+                        }).show();
                 //Hello world!
             }
         });
@@ -73,4 +79,32 @@ public class RssfeedActivity extends AppCompatActivity implements MyListFragment
         return super.onOptionsItemSelected(item);
     }
 
+//    private void takeScreenshot() {
+//        Date now = new Date();
+//        android.text.format.DateFormat.format("yyyy-MM-dd_hh:mm:ss", now);
+//
+//        try {
+//            // image naming and path  to include sd card  appending name you choose for file
+//            String mPath = Environment.getExternalStorageDirectory().toString() + "/" + now + ".jpg";
+//
+//            // create bitmap screen capture
+//            View v1 = getWindow().getDecorView().getRootView();
+//            v1.setDrawingCacheEnabled(true);
+//            Bitmap bitmap = Bitmap.createBitmap(v1.getDrawingCache());
+//            v1.setDrawingCacheEnabled(false);
+//
+//            File imageFile = new File(mPath);
+//
+//            FileOutputStream outputStream = new FileOutputStream(imageFile);
+//            int quality = 100;
+//            bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
+//            outputStream.flush();
+//            outputStream.close();
+//
+//            openScreenshot(imageFile);
+//        } catch (Throwable e) {
+//            // Several error may come out with file handling or OOM
+//            e.printStackTrace();
+//        }
+//    }
 }
