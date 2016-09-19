@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:background="#2200ff08"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Overview Fragment"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dip" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Chapter 1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Chapter 2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Chapter 3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Conclusion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="10dip" />
+
+
+</LinearLayout>
