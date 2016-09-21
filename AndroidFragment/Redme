@@ -2,4 +2,8 @@ Nice article:
 http://www.vogella.com/tutorials/AndroidFragments/article.html
 
 Headless fragments:
-http://luboganev.github.io/blog/headless-fragments/
+1. http://luboganev.github.io/blog/headless-fragments/
+2. http://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html
+
+Memory Leak:
+http://www.androiddesignpatterns.com/2013/04/activitys-threads-memory-leaks.html

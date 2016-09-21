@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import example.com.fragmentapp.headless.MainActivity;
+
 public class RssfeedActivity extends AppCompatActivity implements MyListFragment.OnItemSelectedListener{
 
     @Override
@@ -71,8 +73,8 @@ public class RssfeedActivity extends AppCompatActivity implements MyListFragment
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_task_frgment) {
+            startActivity(new Intent(RssfeedActivity.this, MainActivity.class));
             return true;
         }
 
@@ -107,4 +109,7 @@ public class RssfeedActivity extends AppCompatActivity implements MyListFragment
 //            e.printStackTrace();
 //        }
 //    }
+
+
+
 }
